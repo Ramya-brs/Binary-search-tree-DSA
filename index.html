@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Validate Binary Search Tree | DSA</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <h4>Validate Binary Search Tree</h4>
+  </head>
+  <body>
+    <div class="container">
+      <main role="main" style="margin-bottom: 100px">
+      <h5>Given the root of a binary tree, determine if it is a valid binary search tree (BST)</h5>
+      <p>
+        The strategy involves recursively traversing the BST and checking that each node's value is within the valid range based on its position in the tree. This approach takes advantage of the BST property where values in the left subtree are smaller than the current node's value, and values in the right subtree are larger
+      </p>
+      <p>Enter the binary tree as an array (e.g., [2,1,3]): </p>
+      <input type="text" id="inputTree" placeholder="Enter binary tree">
+      <button onclick="checkValidBST()">Check Valid BST</button>
+      <div id="output"></div>
+    </main>
+    </div>
+    <script src="assets/js/validate-binary-tree.js" defer></script>
+    
+  </body>
+</html>
